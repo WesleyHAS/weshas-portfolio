@@ -1,0 +1,279 @@
+/* Variables */
+:root {
+  --pinkish: #deacf5;
+  --light-purple: #9754cb;
+  --dark-purple: #6237a0;
+  --evendarker: #28104e;
+  --off-white: #faf9f6;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+/* Header styling */
+header {
+  background-color: var(--evendarker);
+  color: var(--evendarker);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+header h1 {
+  background-color: var(--pinkish);
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  display: flex;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: auto;
+  padding-right: 40px;
+  font-size: 30px;
+}
+
+.nav-item a {
+  color: var(--pinkish);
+  text-decoration: none;
+  border-bottom: solid var(--pinkish) 4px;
+}
+
+/* Background image settings */
+.background-image {
+  background-image: url(../images/background-image.jpg);
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  background-size: 100% 200px;
+}
+
+.background-caption {
+  font-size: 30px;
+  color: var(--evendarker);
+  float: right;
+  background-color: var(--pinkish);
+  padding: 10px 20px;
+  margin-top: 130px;
+  margin-right: 90px;
+  font-weight: bold;
+}
+
+/* Wrapper for all divs */
+.main-containers {
+  display: flex;
+  margin: 40px 0;
+}
+
+/* Settings for containers on left side (15% of page) */
+.left-container {
+  font-size: 50px;
+  text-align: right;
+  padding: 15px;
+  border-right: solid var(--dark-purple) 3px;
+  color: var(--dark-purple);
+  min-width: 15%;
+  font-weight: bold;
+}
+
+/* Settings for the containers on the right side (no specific size required) */
+.right-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  color: var(--dark-purple);
+  font-size: 1.2em;
+}
+
+/* Alignment and styling of images on work section */
+.right-container-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.right-container-top-img {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.right-container-bottom-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.top-image-centering {
+  position: relative;
+  width: 100%;
+}
+
+.image-container-link-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.image-container-link {
+  position: relative;
+  width: 30.5%;
+  margin-right: 30px;
+  margin-left: 22px;
+}
+
+.top-image-captions {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  background-color: var(--dark-purple);
+  color: var(--pinkish);
+  padding: 30px 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.captions-top-description {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.bottom-image-captions {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  background-color: var(--dark-purple);
+  color: var(--pinkish);
+  padding: 30px 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.captions-bottom-description {
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.img-1 {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.img-2 {
+  width: 100%;
+  height: 200px;
+}
+
+img {
+  border: solid var(--dark-purple) 5px;
+}
+
+/* Bottom Navigation Bar Settings */
+.right-container li {
+  padding: 20px 70px;
+  font-size: 30px;
+}
+
+.right-container li a {
+  text-decoration: none;
+  color: var(--dark-purple);
+  border-bottom: solid var(--dark-purple) 4px;
+}
+
+#bottom-nav {
+  margin-left: 210px;
+}
+
+/* Sticky Footer */
+.footer {
+  background-color: var(--evendarker);
+  color: var(--off-white);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Query for responsiveness of page */
+@media (max-width: 1850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .nav-item {
+    padding: 10px;
+  }
+
+  .background-image {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-containers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-container {
+    margin-right: 50px;
+  }
+
+  .right-container {
+    margin-right: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-image-captions {
+    width: 25%;
+  }
+
+  .bottom-image-captions {
+    width: 50%;
+  }
+
+  .right-container li {
+    padding: 20px 0px;
+  }
+
+  #bottom-nav {
+    margin-left: 20px;
+  }
+}

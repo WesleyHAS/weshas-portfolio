@@ -9,8 +9,10 @@ import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Work from "./pages/Work.jsx";
 
-import "./Reset.css";
+// import "./Reset.css";
 import "./App.css";
+// index.js or App.js
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createBrowserRouter([
   {
@@ -20,10 +22,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
-      },
-      {
-        path: "/About",
         element: <About />,
       },
       {
@@ -33,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/Contact",
         element: <Contact />,
+      },
+      {
+        path: "/Resume",
+        element: <Home />,
       },
     ],
   },
