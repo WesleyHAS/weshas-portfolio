@@ -213,6 +213,17 @@ img {
   margin-left: 210px;
 }
 
+/* Sticky Footer */
+.footer {
+  background-color: var(--evendarker);
+  color: var(--off-white);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Media Query for responsiveness of page */
 @media (max-width: 1850px) {
   header {
