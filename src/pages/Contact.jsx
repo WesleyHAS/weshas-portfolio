@@ -1,6 +1,4 @@
-// import React from "react";
-
-function Footer() {
+export default function Contact() {
   return (
     <div class="main-containers">
       <p id="contact-me" class="left-container">
@@ -26,5 +24,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

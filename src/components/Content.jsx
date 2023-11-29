@@ -1,6 +1,4 @@
-import React from "react";
-
-function Main() {
+function Content() {
   return (
     <body>
       <figure class="background-image">
@@ -113,4 +111,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Content;
