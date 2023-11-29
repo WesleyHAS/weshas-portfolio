@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Work from "./pages/Work.jsx";
+import Resume from "./pages/Resume.jsx";
 
 // import "./Reset.css";
 import "./App.css";
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/Resume",
-        element: <Home />,
+        element: <Resume />,
       },
     ],
   },

@@ -41,6 +41,7 @@ function Navbar() {
               <li className="nav-item">
                 <Link
                   to="/Resume"
+                  rel="noopener noreferrer" // Add these attributes for security reasons
                   className={`nav-link ${
                     currentPage === "/Resume" && "active"
                   }`}
@@ -57,3 +58,12 @@ function Navbar() {
 }
 
 export default Navbar;
+
+//<Link
+//to="/Resume"
+//className={`nav-link ${
+//  currentPage === "/Resume" && "active"
+//}`}
+//>
+//Resume
+//</Link>
