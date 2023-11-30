@@ -9,10 +9,47 @@
 }
 
 .profile-image {
-  width: 200px; /* Adjust the width as needed */
+  width: 250px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
-.footer-main {
-  padding-bottom: 100px;
+.navbarHeader {
+  background-color: #f4f4f4;
+  height: 60px;
+}
+
+.container {
+  margin-top: 3em;
+  margin-bottom: 7em;
+  padding: "20px";
+  font-size: 18px;
+  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.2)";
+}
+
+html {
+  background-color: #f4f4f4;
+}
+
+#root {
+  background-color: #f4f4f4;
+}
+
+.dev-name {
+  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.2)";
+}
+
+.dev-tittle {
+  margin-bottom: 100px;
+  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.2)";
+}
+
+/* Footer.css */
+
+.footer {
+  background-color: #f4f4f4;
+  height: 60px;
+}
+
+.icons {
+  color: black;
 }
