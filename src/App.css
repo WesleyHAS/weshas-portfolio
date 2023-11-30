@@ -105,3 +105,10 @@ html {
   margin-top: 10em;
   margin-bottom: 10em;
 }
+
+@media screen and (max-width: 600px) {
+  #projects-container {
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+}

@@ -5,7 +5,7 @@ export default function Projects() {
   const [projects] = useState(projectList);
 
   return (
-    <div className="container">
+    <div id="projects-container" className="container">
       <div className="row">
         {projects.map((project, index) => (
           <div key={index} className="col-md-4 mb-4">
