@@ -1,26 +1,109 @@
-export default function Contact() {
+import React, { useState } from "react";
+
+export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [validationErrors, setValidationErrors] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    if (value.trim() === "") {
+      setValidationErrors({
+        ...validationErrors,
+        [name]: true,
+      });
+    } else {
+      setValidationErrors({
+        ...validationErrors,
+        [name]: false,
+      });
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+  };
+
   return (
-    <div class="main-containers">
-      <p id="contact-me" class="left-container">
-        Contact
-        <br />
-        Me <br />
-      </p>
-      <ul class="right-container" id="bottom-nav">
-        <li>
-          <a href="#phone">555.555.5555</a>
-        </li>
-        <li>
-          <a href="#email">email@email.com</a>
-        </li>
-        <li>
-          <a href="#github">GitHub</a>
-        </li>
-        <li>
-          <a href="#twitter">Twitter</a>
-        </li>
-      </ul>
-      <footer></footer>
+    <div className="container mt-5">
+      <h2>Contact Us</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            className={`form-control ${
+              validationErrors.name ? "is-invalid" : ""
+            }`}
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            required
+          />
+          {validationErrors.name && (
+            <div className="invalid-feedback">Name is required.</div>
+          )}
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email address:</label>
+          <input
+            type="email"
+            className={`form-control ${
+              validationErrors.email ? "is-invalid" : ""
+            }`}
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            required
+          />
+          {validationErrors.email && (
+            <div className="invalid-feedback">Email is required.</div>
+          )}
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message:</label>
+          <textarea
+            className={`form-control ${
+              validationErrors.message ? "is-invalid" : ""
+            }`}
+            id="message"
+            name="message"
+            rows="5"
+            value={formData.message}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            required
+          ></textarea>
+          {validationErrors.message && (
+            <div className="invalid-feedback">Message is required.</div>
+          )}
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
