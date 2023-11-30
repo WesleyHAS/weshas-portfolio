@@ -56,7 +56,7 @@ export default function Projects() {
               </a>
               <div className="card-body">
                 <h5 className="card-title">{project.projectName}</h5>
-                <p className="card-text">{project.projectDescription}</p>
+                <p className="card-text">Techs: {project.projectDescription}</p>
               </div>
             </div>
           </div>

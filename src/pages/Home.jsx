@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <div class="main-containers">
-      <p id="about-me" class="left-container">
+    <div className="main-containers">
+      <p id="about-me" className="left-container">
         Home
         <br />
         Page
       </p>
-      <section class="right-container">
+      <section className="right-container">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc
         aliquet bibendum. Ullamcorper a lacus vestibulum sed arcu non odio

@@ -2,14 +2,14 @@ import myPhoto from "../assets/images/wesAvatar.png";
 
 export default function About() {
   return (
-    <div class="main-containers">
-      <p id="about-me" class="left-container">
+    <div className="main-containers">
+      <p id="about-me" className="left-container">
         About
         <br />
         Me
       </p>
       <img src={myPhoto} alt="My Photo" className="profile-image" />
-      <section class="right-container">
+      <section className="right-container">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc
         aliquet bibendum. Ullamcorper a lacus vestibulum sed arcu non odio

@@ -44,7 +44,7 @@ export default function ContactForm() {
 
   return (
     <div className="container mt-5">
-      <h2>Contact Us</h2>
+      <h2>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
