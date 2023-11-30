@@ -3,7 +3,6 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Content from "./components/Content";
 import { Outlet } from "react-router-dom";
 
 function App() {

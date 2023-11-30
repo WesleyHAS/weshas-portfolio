@@ -38,13 +38,13 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    // Just a log to show that submitting is working
     console.log("Form submitted:", formData);
   };
 
   return (
-    <div className="container mt-5">
-      <h2>Contact Me</h2>
+    <div className="container contact-container">
+      <h2 className="contact-me">Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>

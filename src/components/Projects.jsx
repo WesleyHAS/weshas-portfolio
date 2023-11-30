@@ -1,36 +1,3 @@
-// import React, { useState } from "react";
-// import { projectList } from "../utils/projectList";
-
-// export default function Projects() {
-//   const [projects] = useState(projectList);
-
-//   return (
-//     <div>
-//       {projects.map((project, index) => (
-//         <figure key={index} className="right-container-bottom-img">
-//           <a
-//             className="image-container-link"
-//             href={project.projectUrl}
-//             target="_blank"
-//           >
-//             <img
-//               src={project.imageUrl}
-//               className="img-2"
-//               alt={project.projectName}
-//             />
-//             <div className="bottom-image-captions">
-//               <p>{project.projectName}</p>
-//               <p className="captions-bottom-description">
-//                 {project.projectDescription}
-//               </p>
-//             </div>
-//           </a>
-//         </figure>
-//       ))}
-//     </div>
-//   );
-// }
-
 import React, { useState } from "react";
 import { projectList } from "../utils/projectList";
 

@@ -4,15 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Error from "./pages/Error.jsx";
-import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Work from "./pages/Work.jsx";
 import Resume from "./pages/Resume.jsx";
 
-// import "./Reset.css";
 import "./App.css";
-// index.js or App.js
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
