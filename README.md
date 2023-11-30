@@ -29,7 +29,7 @@ N/A
 
 ## Usage
 
-N/A
+Click on the card in the portfolio section to be taken to the deployed application. Also repository link provided below the card.
 
 ## Credits
 

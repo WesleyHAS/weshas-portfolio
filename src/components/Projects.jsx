@@ -24,6 +24,14 @@ export default function Projects() {
               <div className="card-body">
                 <h5 className="card-title">{project.projectName}</h5>
                 <p className="card-text">Techs: {project.projectDescription}</p>
+                <a
+                  href={project.projectGithub}
+                  target="_blank"
+                  className="card-text"
+                  id="card-anchor"
+                >
+                  Github Repo
+                </a>
               </div>
             </div>
           </div>
