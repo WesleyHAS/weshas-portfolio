@@ -17,49 +17,50 @@ export default function About() {
           />
           <ul className="list-unstyled mt-3">
             <li>
-              <strong>Passionate:</strong> Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
+              <strong>Passionate:</strong> Cooking, video games, technology and
+              nerd stuff in general.
             </li>
             <li>
-              <strong>Skills:</strong> Sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
+              <strong>Skills:</strong> Problem solving, sense of urgency and a
+              great chef!
             </li>
             <li>
-              <strong>Interests:</strong> Viverra ipsum nunc aliquet bibendum.
-              Ullamcorper a lacus vestibulum sed.
+              <strong>Interests:</strong> Cars, DIY projects and 3D printing.
             </li>
           </ul>
         </div>
         <div className="col-md-8">
           <section className="right-container text-left">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Viverra ipsum nunc aliquet bibendum. Ullamcorper a lacus
-              vestibulum sed arcu non odio euismod. Faucibus ornare suspendisse
-              sed nisi lacus sed viverra tellus in. Gravida arcu ac tortor
-              dignissim convallis. Pretium quam vulputate dignissim suspendisse
-              in. Sagittis orci a scelerisque purus semper eget duis. Molestie
-              ac feugiat sed lectus vestibulum mattis ullamcorper velit sed.
-              Felis imperdiet proin fermentum leo vel. Turpis tincidunt id
-              aliquet risus feugiat in ante. Diam donec adipiscing tristique
-              risus. Sit amet dictum sit amet justo donec.
+              Hey there! I'm Wes, a Full Stack Junior Developer. My original
+              career was as a professional Chef, but due to a wrist injury, I
+              was forced to hang up my apron and explore new opportunities. This
+              experience rekindled my passion and curiosity for the tech field.
+              I thrive in high-pressure environments and enjoy problem-solving.
+              I graduated from the University of Toronto's School of Continuing
+              Studies Coding Bootcamp in 2024, acquiring a range of skills along
+              the way, including HTML/CSS + Bootstrap, JavaScript ES6 + JQuery,
+              MongoDB, Express.js, React, and Node.js (MERN stack), SQL + NoSQL,
+              GitHub, MVC, Object-Oriented Programming (OOP), and
+              Object-Relational Mapping (ORM).
             </p>
             <br />
             <p>
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Tempus egestas
-              sed sed risus pretium. Non consectetur a erat nam at. Suscipit
-              adipiscing bibendum est ultricies integer quis auctor elit sed.
-              Dui sapien eget mi proin sed libero. Quam adipiscing vitae proin
-              sagittis nisl rhoncus mattis rhoncus. Varius quam quisque id diam
-              vel. Mattis ullamcorper velit sed ullamcorper morbi tincidunt
-              ornare. Faucibus turpis in eu mi bibendum neque egestas congue
-              quisque. Nulla pharetra diam sit amet. Malesuada nunc vel risus
-              commodo viverra maecenas accumsan. Egestas purus viverra accumsan
-              in nisl. Ut diam quam nulla porttitor massa id. Facilisis volutpat
-              est velit egestas dui id ornare. Mauris rhoncus aenean vel elit
-              scelerisque mauris. Justo donec enim diam vulputate.
+              In a previous life, I wore the hat of an Executive Chef of a 300
+              seat italian restaurant. Cooking isn't just a skill; it's a
+              creative expression that taught me the art of multitasking,
+              urgency, and maintaining a sense of calm under pressure. My
+              journey in the culinary world has contributed to my
+              problem-solving abilities and instilled a strong sense of
+              discipline.
+            </p>
+            <br />
+            <p>
+              Feel free to explore my GitHub for a glimpse into my coding
+              journey. I'm always up for a chat about tech, culinary adventures,
+              or anything in between. Connect with me on LinkedIn and let's
+              embark on new possibilities together! Looking forward to the
+              exciting journey ahead!
             </p>
           </section>
         </div>

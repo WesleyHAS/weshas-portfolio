@@ -6,7 +6,7 @@
 
 Welcome to my React portfolio! This project serves as a showcase of my skills, projects, and experiences as a developer. Built with React, this portfolio provides an interactive and visually appealing way for visitors to learn more about me and my work.
 
-You can check the deployed application [here](https://main--subtle-syrniki-2e586d.netlify.app/).
+You can check the deployed application [here](https://wesleyhas.netlify.app/).
 
 ## Screenshots
 

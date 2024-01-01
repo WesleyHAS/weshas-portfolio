@@ -14,7 +14,7 @@ export default function Footer() {
           <FaGithub size={30} />
         </a>
         <a
-          href="https://www.linkedin.com/in/wesley-henrique-alc%C3%A2ntara-silva-198000162/"
+          href="https://www.linkedin.com/in/wesleyhas/"
           target="_blank"
           className="mx-3 icons"
         >

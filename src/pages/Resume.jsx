@@ -27,6 +27,7 @@ import { SiSequelize } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
 
 export default function Resume() {
   const fileUrl =
@@ -49,6 +50,10 @@ export default function Resume() {
                   <li>
                     <FaCss3Alt size={30} />
                     CSS
+                  </li>
+                  <li>
+                    <FaBootstrap  size={30} />
+                    Bootstrap
                   </li>
                   <li>
                     <IoLogoJavascript size={25} />
