@@ -1,5 +1,12 @@
 export const projectList = [
   {
+    projectName: "The CodeX",
+    projectUrl: "https://the-codex.onrender.com/",
+    projectDescription: "Full Stack Web Application",
+    imageUrl: "/the-codex.png",
+    projectGithub: "https://github.com/theApostols/the-codex",
+  },
+  {
     projectName: "Personalized Information Hub",
     projectUrl:
       "https://scs-bc-project-1-group-1.github.io/personalized-information-hub/",
