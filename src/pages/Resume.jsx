@@ -31,7 +31,7 @@ import { FaBootstrap } from "react-icons/fa";
 
 export default function Resume() {
   const fileUrl =
-    "https://raw.githubusercontent.com/WesleyHAS/weshas-portfolio/main/src/assets/documents/resumeWesley.pdf";
+    "https://raw.githubusercontent.com/WesleyHAS/weshas-portfolio/main/src/assets/documents/wesleyresume.docx";
 
   return (
     <div id="skills-container" className="container">
@@ -52,7 +52,7 @@ export default function Resume() {
                     CSS
                   </li>
                   <li>
-                    <FaBootstrap  size={30} />
+                    <FaBootstrap size={30} />
                     Bootstrap
                   </li>
                   <li>
