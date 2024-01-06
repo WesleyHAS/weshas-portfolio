@@ -324,3 +324,8 @@ html {
 ul {
   list-style-type: none;
 }
+
+#project-images {
+  max-width: 100%;
+  height: 225px;
+}

@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import { FaTwitch } from "react-icons/fa";
 
 export default function Footer() {
   return (

@@ -70,6 +70,7 @@ export default function Projects() {
             <div key={index} className="col-md-4 mb-4">
               <div className="card">
                 <img
+                  id="project-images"
                   src={project.imageUrl}
                   className="card-img-top"
                   alt={project.projectName}
@@ -111,6 +112,7 @@ export default function Projects() {
             <div key={index} className="col-md-4 mb-4">
               <div className="card">
                 <img
+                  id="project-images"
                   src={project.imageUrl}
                   className="card-img-top"
                   alt={project.projectName}
@@ -152,6 +154,7 @@ export default function Projects() {
             <div key={index} className="col-md-4 mb-4">
               <div className="card">
                 <img
+                  id="project-images"
                   src={project.imageUrl}
                   className="card-img-top"
                   alt={project.projectName}
