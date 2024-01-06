@@ -51,43 +51,132 @@
 
 import React, { useState } from "react";
 import { projectList } from "../utils/projectList";
+import { teamProjectList } from "../utils/teamProjectList";
+import { nonProjectList } from "../utils/nonProjects";
+import { FaGithubSquare } from "react-icons/fa";
+import { GrDeploy } from "react-icons/gr";
 
 export default function Projects() {
   const [projects] = useState(projectList);
+  const [teamProjects] = useState(teamProjectList);
+  const [nonProjects] = useState(nonProjectList);
 
   return (
-    <div id="projects-container" className="container">
-      <div className="row">
-        {projects.map((project, index) => (
-          <div key={index} className="col-md-4 mb-4">
-            <div className="card">
-              <a
-                href={project.projectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+    <>
+      <div id="team-projects-container" className="container">
+        <h2 className="projects-tittle">Collaborative Group Projects</h2>
+        <div className="row">
+          {teamProjects.map((project, index) => (
+            <div key={index} className="col-md-4 mb-4">
+              <div className="card">
                 <img
                   src={project.imageUrl}
                   className="card-img-top"
                   alt={project.projectName}
                 />
-              </a>
-              <div className="card-body">
-                <h5 className="card-title">{project.projectName}</h5>
-                <p className="card-text">Techs: {project.projectDescription}</p>
-                <a
-                  href={project.projectGithub}
-                  target="_blank"
-                  className="card-text"
-                  id="card-anchor"
-                >
-                  Github Repo
-                </a>
+                <div className="card-body">
+                  <h5 className="card-title">{project.projectName}</h5>
+                  <p className="card-text">
+                    Techs: {project.projectDescription}
+                  </p>
+                  <a
+                    href={project.projectGithub}
+                    target="_blank"
+                    className="card-text"
+                    id="card-anchor"
+                  >
+                    <FaGithubSquare size={30} className="github-icon" />
+                    Github Repo
+                  </a>
+                  <a
+                    href={project.projectUrl}
+                    target="_blank"
+                    className="card-text"
+                    id="card-anchor"
+                  >
+                    <GrDeploy size={25} className="deploy-icon" />
+                    Deployed App
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+
+      <div id="deployed-apps-container" className="container">
+        <h2 className="projects-tittle">Deployed Projects</h2>
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-4 mb-4">
+              <div className="card">
+                <img
+                  src={project.imageUrl}
+                  className="card-img-top"
+                  alt={project.projectName}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{project.projectName}</h5>
+                  <p className="card-text">
+                    Techs: {project.projectDescription}
+                  </p>
+                  <a
+                    href={project.projectGithub}
+                    target="_blank"
+                    className="card-text"
+                    id="card-anchor"
+                  >
+                    <FaGithubSquare size={30} className="github-icon" />
+                    Github Repo
+                  </a>
+                  <a
+                    href={project.projectUrl}
+                    target="_blank"
+                    className="card-text"
+                    id="card-anchor"
+                  >
+                    <GrDeploy size={25} className="deploy-icon" />
+                    Deployed App
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div id="deployed-apps-container" className="container">
+        <h2 className="projects-tittle">Non-Deployed Projects</h2>
+        <div className="row">
+          {nonProjects.map((project, index) => (
+            <div key={index} className="col-md-4 mb-4">
+              <div className="card">
+                <img
+                  src={project.imageUrl}
+                  className="card-img-top"
+                  alt={project.projectName}
+                />
+
+                <div className="card-body">
+                  <h5 className="card-title">{project.projectName}</h5>
+                  <p className="card-text">
+                    Techs: {project.projectDescription}
+                  </p>
+                  <a
+                    href={project.projectGithub}
+                    target="_blank"
+                    className="card-text"
+                    id="card-anchor"
+                  >
+                    <FaGithubSquare size={30} className="github-icon" />
+                    Github Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }

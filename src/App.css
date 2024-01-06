@@ -117,7 +117,7 @@ html {
 }
 
 .icons:hover {
-  animation: iconBounce 0.6s ease-in-out; 
+  animation: iconBounce 0.6s ease-in-out;
 }
 
 /* project cards */
@@ -171,6 +171,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Titles */
+.projects-tittle {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 /* .wrapper {
@@ -287,4 +293,30 @@ html {
 .card-container input:checked + label .card-description {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Github Repo and Deployed App Links */
+.card-text {
+  margin-top: 0.5rem; 
+  text-align: center;
+}
+
+/* Separate Github Repo and Deployed App Links */
+.card-text a {
+  margin: 1rem; 
+}
+
+.github-icon {
+  margin-right: 5px;
+}
+
+.deploy-icon {
+  margin-right: 5px;
 }
