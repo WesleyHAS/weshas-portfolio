@@ -20,13 +20,6 @@ export default function Footer() {
         >
           <CiLinkedin size={30} />
         </a>
-        <a
-          href="https://www.twitch.tv/wesleyhas"
-          target="_blank"
-          className="mx-3 icons"
-        >
-          <FaTwitch size={30} />
-        </a>
       </div>
     </div>
   );
